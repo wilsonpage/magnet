@@ -14,4 +14,4 @@ install:
 script:
     - echo "Android build"
     - cd android
-    - ./gradlew assembleRelease
+    - ./gradlew --debug assembleRelease
