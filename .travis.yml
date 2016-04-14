@@ -10,8 +10,9 @@ before_install:
     - brew update
 install:
     - brew reinstall gradle flow watchman xctool android-sdk
+    - ./build/install-android-sdk.expect
     - npm install
 script:
     - echo "Android build"
     - cd android
-    - ./gradlew assembleRelease | tee
+    - set -o pipefail && ./gradlew assembleRelease | tee
