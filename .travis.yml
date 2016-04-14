@@ -6,5 +6,6 @@ android:
         - build-tools-19.1.0
         - android-19
 script:
+    - echo "Android build"
     - cd android
     - ./gradlew assembleRelease
