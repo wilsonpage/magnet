@@ -1,0 +1,10 @@
+language: android
+android:
+    components:
+        - platform-tools
+        - tools
+        - build-tools-19.1.0
+        - android-19
+script:
+    - cd android
+    - ./gradlew assembleRelease
